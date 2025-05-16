@@ -2,12 +2,10 @@ package com.javaacademy.Ablazzing_polyclinic2.config;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.ToString;
 
 import java.math.BigDecimal;
 
 @Getter
-@ToString
 @AllArgsConstructor
 public enum DoctorSpecialization {
     DENTIST("Дантист", BigDecimal.valueOf(1_500)),
@@ -15,6 +13,6 @@ public enum DoctorSpecialization {
     SENIOR_SURGEON("Хирург", BigDecimal.valueOf(2_000)),
     JUNIOR_SURGEON("Хирург", BigDecimal.valueOf(700));
 
-    final String specialization;
-    final BigDecimal rate;
+    private final String specialization;
+    private final BigDecimal rate;
 }

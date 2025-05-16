@@ -10,7 +10,6 @@ import java.math.BigDecimal;
  * Касса
  */
 @Slf4j
-@ToString
 @Component
 public class Casher {
     private BigDecimal profit = BigDecimal.ZERO;
