@@ -1,6 +1,6 @@
 package com.javaacademy.Ablazzing_polyclinic2;
 
-import lombok.ToString;
+import jakarta.annotation.PreDestroy;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -19,6 +19,7 @@ public class Casher {
         log.info("Принят платеж в размере: {}", payment);
     }
 
+    @PreDestroy
     public void prtProfit() {
         log.info("Доход поликлиники: {}", profit);
     }

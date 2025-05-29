@@ -15,8 +15,6 @@ public class AblazzingPolyclinic2Application {
         polyclinic.healthSeniorSurgeon();
         polyclinic.healthJuniorSurgeon();
 
-        Casher casher = context.getBean(Casher.class);
-        casher.prtProfit();
+        context.close();
     }
-
 }

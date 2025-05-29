@@ -1,7 +1,6 @@
 doctor:
-  specialization:
-    rates:
-      dentist: 1500.75
-      therapist: 500.00
-      senior_surgeon: 2000.50
-      junior_surgeon: 750.25
+  rates:
+    dentist: 1_500
+    therapist: 500
+    junior_surgeon: 700
+    senior_surgeon: 2_000

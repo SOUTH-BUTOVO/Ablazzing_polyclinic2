@@ -1,20 +1,19 @@
-package com.javaacademy.Ablazzing_polyclinic2;
+package com.javaacademy.Ablazzing_polyclinic2.doctor;
 
-import com.javaacademy.Ablazzing_polyclinic2.config.DoctorSpecialization;
-import lombok.Data;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.math.BigDecimal;
 
-@Data
 @Slf4j
+@Getter
 public class Doctor {
     private final String specialization;
     private final BigDecimal rateAppointment;
 
-    public Doctor(DoctorSpecialization spec) {
+    public Doctor(DoctorSpecialization spec, BigDecimal rateAppointment) {
         this.specialization = spec.getSpecialization();
-        this.rateAppointment = spec.getRate();
+        this.rateAppointment = rateAppointment;
     }
 
     public BigDecimal healPeople() {
